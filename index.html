@@ -23,6 +23,9 @@
                 <ul>
                   <li><a href="#summary">Summary</a></li>
                   <li><a href="#examples">Examples</a></li>
+                    <!-- 
+                        I have to nest a list through an entry in a list in order to not get a w3 validator error
+                    -->
                     <li><ol>  
                         <li><a href="#example-1">Example 1</a></li>
                         <li><a href="#example-2">Example 2</a></li>
@@ -97,12 +100,12 @@
                         <div>
                             <input type="checkbox" id="gary-best" name="gary-best"
                             checked>
-                            <label for="garybest">Is Mr Gary the bestest westest?</label>
+                            <label for="gary-best">Is Mr Gary the bestest westest?</label>
                         </div>
 
                         <div>
-                            <label for="start">What day will Mr Gary have his 15th birthday?</label>
-                            <input type="date" id="birthday" name="birthday"
+                            <label for="birthday">What day will Mr Gary have his 15th birthday?</label>
+                            <input type="date" id="birthday" name="gary-birthday"
                                 min="2021-01-01" max="2032-12-31"> 
                         </div>
 
@@ -152,9 +155,8 @@
                 </details>
                 <details>
                     <summary>Audio recording</summary>
-
                     <audio controls>
-                        <source src="media/Record (online-voice-recorder.com).mp3" type="audio/mp3">
+                        <source src="media/Record(online-voice-recorder.com).mp3" type="audio/mp3">
                         Your browser does not support the <code>audio</code> element.
                     </audio>
                 </details>
@@ -171,18 +173,3 @@
 
 
 
-<!-- 
-    a title (e.g. "Pomodoro Timer First Brainstorm")
-    subtitle for the meeting section/the topic of the meeting (e.g. "brainstorming", "check-ins", "documentation")
-    subtitle for the date
-    attendance list
-    agenda of what the meeting will cover
-    things that were unfinished business from last meeting
-    things that are new business that need to be talked about
-    any miscellaneous comments / questions / concerns that anyone would like to bring up
-    pictures of any diagrams / architecture / things that were presented
-    SWE meetings often have people diagram things on a whiteboard so we want those captured as well
-For the following two, you can simply take a 30 second pretend audio recording & video recording to use, we are just trying to get you familiar with the <audio> and <video> elements. Yes, you must have both audio and video elements, and yes, you can use the audio from the video you took for the audio element, it just has to be in a separate audio file.
-audio recording the meeting
-video recording of the meeting
--->
