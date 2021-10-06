@@ -1,7 +1,7 @@
 Kaiwen Tsou 
 
-Lab 2
+Lab 3
 
 Find published GitHub Page here:
 
-https://rainbowpangolin.github.io/Lab2/
+https://rainbowpangolin.github.io/fa21-cse110-lab3/
