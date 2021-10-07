@@ -1,8 +1,13 @@
 body {
-    background-color: lightblue;
+    background: rgb(126, 75, 126)
+    /*background-color: rgb(126, 75, 126); */ /* same as above, but more specific*/
   }
   
   h1 {
-    color: navy;
+    color: hsla(24, 100%, 50%, 1);
     margin-left: 20px;
-  }
+  } 
+  h2 {
+    color: #FF0;
+    margin-left: 20px;
+  } 
