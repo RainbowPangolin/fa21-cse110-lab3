@@ -1,8 +1,22 @@
-    /* Change background color */
+/* Get web font */
+
+
+html {
+  font-family: 'Gluten', cursive;}
+
+ /* Change background color */
 body {
     background: rgb(126, 75, 126)
 
     /*background-color: rgb(126, 75, 126); */ /* same as above, but more specific*/
+  }
+
+  section {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    gap: 10px;
+
   }
 
   /* Increase right-margin and bottom margin on small headings */
@@ -14,11 +28,29 @@ display: inline-block;
     position: static;
   }
 
+  /* hide picture on small screens */
+  @media (max-width: 50rem) {
+    #pic {
+      display:none;
+    }
+  }
+  
+
+  /* Make the attendance list annoying to read */
   #attendance > li {
     margin-left: 0.5in;
-      color: blue;
-  }
+    color: blue;
 
+    display: inline-grid ;
+    grid-template-columns: [first] auto [line2] auto [line3] auto [end];
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: row1-start;
+    grid-row-end: 2;
+    }
+
+
+    
     /* Make some headings orange with padding */
       /* Also give them a cute rounded border I guess */
   h1, h2 {
@@ -53,7 +85,7 @@ display: inline-block;
     color: blue;
     height:2rem;
     padding: 15px 5px 5px 15px;
-    width:1lh;
+    width: 0lh;
     max-width:auto;
     min-width:auto; 
     border: 5px solid black;
