@@ -2,12 +2,55 @@ body {
     background: rgb(126, 75, 126)
     /*background-color: rgb(126, 75, 126); */ /* same as above, but more specific*/
   }
+
+  h3 {
+    margin-left: 40px;
+  }
   
-  h1 {
+  h1, h2 {
     color: hsla(24, 100%, 50%, 1);
     margin-left: 20px;
   } 
-  h2 {
-    color: #FF0;
-    margin-left: 20px;
+
+
+  .menu {
+    color: Green;
   } 
+
+  #solution {
+    color: blue;
+  }
+
+  a[href] {
+      color: yellow;
+  }
+
+  /* Hovering over hyperlinks is pink */
+  a:hover { 
+      color:pink;
+  }
+  /* All paragraph content within section (basically all paragraphs) */
+  section > p {
+      color: rgb(32, 4, 41);
+  }
+
+  /* make agenda list a little longer */
+  ul.nested-list li {
+    margin: 0.25em;
+  }
+
+  /* Circles for nested list of any lists */
+  li li {
+    list-style-type: circle;
+  }
+
+  /* For any paragraphs immediately after heading */
+  h2 + p {
+      color: white;
+  }
+
+  h2 ~ ol {
+    color: white;
+  }
+
+  
