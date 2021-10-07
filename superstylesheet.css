@@ -1,26 +1,66 @@
+    /* Change background color */
 body {
     background: rgb(126, 75, 126)
+
     /*background-color: rgb(126, 75, 126); */ /* same as above, but more specific*/
   }
 
+  /* Increase right-margin and bottom margin on small headings */
   h3 {
-    margin-left: 40px;
+display: block;
+display: inline;
+display: inline-block;
+    margin: 0px 0px .5pc 25pt;
+    position: static;
   }
-  
+
+  #attendance > li {
+    margin-left: 0.5in;
+      color: blue;
+  }
+
+    /* Make some headings orange with padding */
+      /* Also give them a cute rounded border I guess */
   h1, h2 {
+      
+    display: block;
+    text-decoration: underline dotted;
+    text-align:center;
     color: hsla(24, 100%, 50%, 1);
-    margin-left: 20px;
+    margin: auto;
+    padding-top: 15px;
+    padding-bottom: 5px;
+    padding-left:5px;
+    padding-right:5px;
+    border-style:ridge  ;
+    border-color:gray;
+    border-width: 5px;
+    border-radius: 7px;
   } 
 
-
+    /* Color and pad the menu */
   .menu {
+    display: inline;
     color: Green;
+    margin-left: 0.5in;
   } 
 
+  /* Highlight the solution */
   #solution {
+    position: relative;
+    top: 4px; left: 40px;
+    display: block-inline;
     color: blue;
+    height:2rem;
+    padding: 15px 5px 5px 15px;
+    width:1lh;
+    max-width:auto;
+    min-width:auto; 
+    border: 5px solid black;
+
   }
 
+  /* Hyperlinks are now yello, deal with it :shades: */
   a[href] {
       color: yellow;
   }
@@ -29,6 +69,17 @@ body {
   a:hover { 
       color:pink;
   }
+
+  /* highlight hyperlinks when clicked */
+  a:active{
+    color:red;
+  }
+
+  /* Highlight small headings when clicked too... I guess*/
+  h3:active{
+    color:red;
+  }
+
   /* All paragraph content within section (basically all paragraphs) */
   section > p {
       color: rgb(32, 4, 41);
@@ -37,6 +88,7 @@ body {
   /* make agenda list a little longer */
   ul.nested-list li {
     margin: 0.25em;
+    
   }
 
   /* Circles for nested list of any lists */
@@ -49,8 +101,9 @@ body {
       color: white;
   }
 
+  /* Any lists next to headings will be white (but the only one we had was overwritten) */
   h2 ~ ol {
     color: white;
   }
-
   
+
